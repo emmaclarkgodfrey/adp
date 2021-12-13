@@ -453,7 +453,19 @@ p.hellos {
      background-color: black;
      padding: 5%;
      z-index: 2;
+     animation-duration: 5s;
+     animation-name: my-animation;
+     animation-iteration-count: 1;
+     opacity:1;
 }
+
+@keyframes my-animation {
+     0% { opacity: 0;
+       display: none; }
+     100% { 
+       display: block;
+       opacity: 1; } 
+     }
 
 h1 {
      text-align: center;
