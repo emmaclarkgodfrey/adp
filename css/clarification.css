@@ -7,11 +7,6 @@ html {
      margin: 4em;
  }
  
- nav {
-      position:fixed;
-      margin-left:10rem;
- }
-
  main {
       display:flex;
       flex-direction: row;
@@ -20,10 +15,10 @@ html {
       gap: 10rem;
  }
  
- .empty {
+nav {
  align-self: flex-start;
- opacity:0;
  }
+
  .info {
       order: 2;
       flex-shrink: 1;
@@ -98,11 +93,7 @@ html {
    margin-left: 1.5em;
  }
 
- li.header {
-      opacity:0;
-     font-family: Clash Display Variable;
-     color:rgba(255, 255, 255, 0);
- }
+
  /*----------------------------------------------*\
  div paddings setting 
  \*----------------------------------------------*/
