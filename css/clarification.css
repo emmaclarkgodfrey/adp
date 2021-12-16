@@ -14,9 +14,38 @@ html {
       align-content: flex-start;
       gap: 10rem;
  }
+
+ main.dark-mode {
+     display:flex;
+     flex-direction: row;
+     justify-content: center;
+     align-content: flex-start;
+     gap: 10rem;
+     background-color: black;
+}  
+
+button {
+     display:flex;
+     position: fixed;
+     left: 10%;
+     top: 50%;
+     font-family: Clash Display Variable;
+     font-style: normal;
+     font-weight: 600;
+     font-size: 32px;
+     line-height: 1.75em;
+     text-decoration: none;
+     color: #000000;
+}
+
+button.dark-mode {
+     color:white;
+}
  
 nav {
  align-self: flex-start;
+ position:fixed;
+ left:10%;
  }
 
  .info {
@@ -41,7 +70,7 @@ nav {
       color: #000000;
  }
  
- a.navigation {
+ a.navigation, button.navigation {
       font-family: Clash Display Variable;
       font-style: normal;
       font-weight: 600;
@@ -101,3 +130,9 @@ nav {
  .hey, .what, .not, .impact, .schools, .where {
       margin-bottom: 2.5em;
  }
+
+ @media screen and (max-width: 80em){
+     body {
+       background-color: black;
+     }
+}
